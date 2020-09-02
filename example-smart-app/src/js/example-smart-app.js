@@ -10,7 +10,6 @@
     function onReady(smart)  {      
       if (smart.hasOwnProperty('patient')) {        
         var patient = smart.patient;
-        console.log("patient", patient)
         var pt = patient.read();
         var obv = smart.patient.api.fetchAll({
                     type: 'Observation',
@@ -21,8 +20,7 @@
                               'http://loinc.org|2089-1', 'http://loinc.org|55284-4']
                       }
                     }
-                  });
-        
+                  });      
        
 
         $.when(pt, obv).fail(onError);
