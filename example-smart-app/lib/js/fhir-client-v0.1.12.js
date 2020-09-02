@@ -1015,7 +1015,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	        "Specimen",
 	        "SupplyDelivery",
 	        "SupplyRequest",
-	        "VisionPrescription"
+	        "VisionPrescription",
+		"Appointment"
 	    ];
 
 	    exports.$WithPatient = mw.$$Simple(function(args){
