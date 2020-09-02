@@ -7,11 +7,10 @@
       ret.reject();
     }
 
-    function onReady(smart)  {
-      console.log("smart :", smart.Appointment)
-      if (smart.hasOwnProperty('patient')) {
-        
+    function onReady(smart)  {      
+      if (smart.hasOwnProperty('patient')) {        
         var patient = smart.patient;
+        console.log("patient", patient)
         var pt = patient.read();
         var obv = smart.patient.api.fetchAll({
                     type: 'Observation',
@@ -23,6 +22,8 @@
                       }
                     }
                   });
+        
+       
 
         $.when(pt, obv).fail(onError);
 
