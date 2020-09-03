@@ -24,7 +24,9 @@
         
         var app = smart.patient.api.fetchAll({
                     type: 'Appointment',
-                    
+                    query : {
+                      date : '2020'
+                    }
                   }); 
        
         console.log("app ", app);
