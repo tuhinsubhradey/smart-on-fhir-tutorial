@@ -20,8 +20,14 @@
                               'http://loinc.org|2089-1', 'http://loinc.org|55284-4']
                       }
                     }
-                  });      
+                  });  
+        
+        var app = smart.patient.api.fetchAll({
+                    type: 'Appointment',
+                    
+                  }); 
        
+        console.log("app ", app);
 
         $.when(pt, obv).fail(onError);
 
