@@ -25,7 +25,9 @@
         var app = smart.patient.api.fetchAll({
                     type: 'Appointment',
                     query : {
-                      date : 'ge2018-12-07T22:22:16.270Z'
+                      date : 'ge2018-12-07T22:22:16.270Z',
+                      date : 'lt2020-08-14T22:22:16.270Z'
+                      
                     }
                   }); 
        
