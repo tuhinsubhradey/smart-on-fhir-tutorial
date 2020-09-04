@@ -26,7 +26,7 @@
                     type: 'Appointment',
                     query : {
                       date : 'ge2019-12-07T22:22:16.270Z',
-                      practitioner : 593923
+                      practitioner : '593923'
                     }
                   }); 
        
