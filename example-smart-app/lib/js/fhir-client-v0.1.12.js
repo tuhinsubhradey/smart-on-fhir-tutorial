@@ -1026,6 +1026,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	                args.query = args.query || {};
 	                args.query["_id"] = args.patient;
 	                args["id"] = args.patient;
+	            } else if (type === "Appointment"){
+	                args.query = args.query || {};	                	            
 	            } else if (targets.indexOf(type) >= 0){
 	                args.query = args.query || {};
 	                args.query["patient"] = args.patient;
