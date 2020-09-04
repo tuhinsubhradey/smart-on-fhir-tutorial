@@ -7,7 +7,16 @@
       ret.reject();
     }
 
-    function onReady(smart)  {      
+    function onReady(smart)  {
+      
+      var app = smart.appointment.api.fetchAll({
+                type: 'Appointment',
+                query : {
+                  date : 'ge2019-12-07T22:22:16.270Z',
+                  practitioner : '593923'
+                }
+              }); 
+            
       if (smart.hasOwnProperty('patient')) {        
         var patient = smart.patient;
         var pt = patient.read();
@@ -22,13 +31,7 @@
                     }
                   });  
         
-        var app = smart.patient.api.fetchAll({
-                    type: 'Appointment',
-                    query : {
-                      date : 'ge2019-12-07T22:22:16.270Z',
-                      practitioner : '593923'
-                    }
-                  }); 
+        
        
         console.log("app ", app);
 
