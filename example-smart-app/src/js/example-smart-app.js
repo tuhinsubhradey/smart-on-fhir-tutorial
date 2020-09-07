@@ -23,7 +23,7 @@
         console.log("app ", app);
         
         
-        /*
+        
         var patient = smart.patient;
         
         var pt = patient.read();
@@ -80,7 +80,7 @@
 
           ret.resolve(p);
         });
-        */
+        
       } else {
         onError();
       }
