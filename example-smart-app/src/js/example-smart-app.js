@@ -8,7 +8,7 @@
     }
 
     function onReady(smart)  { 
-                  
+      console.log("smart", smart);            
       if (smart.hasOwnProperty('patient')) { 
         
         var app = smart.patient.api.fetchAll({
