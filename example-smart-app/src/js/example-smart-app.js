@@ -11,7 +11,7 @@
                   
       if (smart.hasOwnProperty('patient')) { 
         
-        var app = smart.user.api.fetchAll({
+        var app = smart.patient.api.fetchAll({
                 type: 'Appointment',
                 query : {
                   date : 'ge2020-05-07T22:22:16.270Z',
