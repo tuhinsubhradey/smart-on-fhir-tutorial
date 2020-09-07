@@ -8,21 +8,19 @@
     }
 
     function onReady(smart)  { 
-      console.log("smart", smart);            
-      if (smart.hasOwnProperty('patient')) { 
-        
-        var app = smart.api.fetchAll({
+      console.log("smart", smart);
+      
+      var app = smart.api.fetchAll({
                 type: 'Appointment',
                 query : {
                   date : 'ge2020-05-07T22:22:16.270Z',
                   practitioner : '593923'
                 }
-              }); 
-        
+              });         
        
-        console.log("app ", app);
-        
-        
+      console.log("app ", app);
+      
+      if (smart.hasOwnProperty('patient')) {       
         
         var patient = smart.patient;
         
@@ -36,9 +34,7 @@
                               'http://loinc.org|2089-1', 'http://loinc.org|55284-4']
                       }
                     }
-                  });  
-        
-        
+                  });                  
 
         $.when(pt, obv).fail(onError);
 
