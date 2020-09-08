@@ -19,7 +19,7 @@
               });         
        
       console.log("app ", app);
-      
+      /*
       if (smart.hasOwnProperty('patient')) {       
         
         var patient = smart.patient;
@@ -80,6 +80,7 @@
       } else {
         onError();
       }
+      */
     }
 
     FHIR.oauth2.ready(onReady, onError);
