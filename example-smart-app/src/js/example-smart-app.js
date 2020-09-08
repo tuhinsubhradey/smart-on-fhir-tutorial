@@ -14,7 +14,8 @@
                 type: 'Appointment',
                 query : {
                   date : 'ge2020-05-07T22:22:16.270Z',
-                  practitioner : '593923'
+                  //practitioner : '593923'
+                  location : '21251399'
                 }
               });         
        
